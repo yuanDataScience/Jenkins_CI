@@ -44,6 +44,12 @@ class Project_Test(unittest.TestCase):
          actualList = st.bubbleSort(testList)
          self.assertEqual(actualList, expectedList)
 
+    def test_random2(self):
+            testList = [random.randint(0, 20),random.randint(0, 20),random.randint(0, 20),random.randint(0, 20)]
+            expectedList = testList.copy()
+            expectedList.sort()
+            actualList = st.bubbleSort(testList)
+            self.assertEqual(actualList, expectedList)
 
 if __name__ == '__main__':
     import xmlrunner
