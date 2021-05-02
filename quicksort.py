@@ -1,4 +1,4 @@
-def quick_sort(arr):
+def quickSort(arr):
     
     quick_sort_help(arr,0,len(arr)-1)
 
