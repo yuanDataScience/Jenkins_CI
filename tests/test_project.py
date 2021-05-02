@@ -44,6 +44,13 @@ class Project_Test(unittest.TestCase):
          st.quickSort(testList)
          self.assertEqual(testList, expectedList)
 
+     def test_random2(self):
+         testList = [random.randint(0, 20),random.randint(0, 20),random.randint(0, 20),random.randint(0, 20)]
+         expectedList = testList.copy()
+         expectedList.sort()
+         st.quickSort(testList)
+         self.assertEqual(testList, expectedList)     
+
 if __name__ == '__main__':
     import xmlrunner
     print ('running main')
